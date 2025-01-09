@@ -46,7 +46,3 @@ To compile the project, navigate to the project directory and run the following 
 
 ```shell
 $ make
-
-
----
-
