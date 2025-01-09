@@ -50,13 +50,3 @@ $ make
 
 ---
 
-### Customization Notes:
-1. **Project Name**: The project name is already filled in as `ft_printf`.
-2. **Tagline**: I added a brief description about recreating a simplified version of `printf`.
-3. **Badges**: I updated the badge URLs to reflect your GitHub username (`jazzazi007`) and your repository name (`ft_printf`).
-4. **About**: I have added the project description, focusing on implementing a simplified `printf`.
-5. **Requirements**: The necessary tools are the GCC compiler and standard C libraries.
-6. **Instructions**: The instructions detail how to compile and use the `ft_printf` function.
-7. **Testing**: The testing section includes a link to the `printfTester` repository for testing your project.
-
-This README now contains all the details for someone to understand and use your project, and it includes information on testing and using your custom `ft_printf` function.
