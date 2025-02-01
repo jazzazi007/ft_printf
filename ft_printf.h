@@ -23,9 +23,9 @@ int		ft_hexnum(unsigned int n);
 int		ft_hexnum_upper(int num);
 int		ft_udecm(unsigned int unum);
 int		ft_ptr(unsigned long ptr);
-char	*ft_itoa(int n);
-void	ft_putchar_fd(char c, int fd);
-int		ft_putstr_fd(char *s, int fd);
-size_t	ft_strlen(const char *c);
-int		ft_numlen(int n, int base);
+char	*ft_p_itoa(int n);
+void	ft_p_putchar_fd(char c, int fd);
+int		ft_p_putstr_fd(char *s, int fd);
+size_t	ft_p_strlen(const char *c);
+int		ft_p_numlen(int n, int base);
 #endif

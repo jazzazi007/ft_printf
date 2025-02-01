@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-char	*ft_itoa(int n)
+char	*ft_p_itoa(int n)
 {
 	char	*ret;
 	char	*digits;
 	int		len;
 
 	digits = "0123456789";
-	len = ft_numlen(n, 10);
+	len = ft_p_numlen(n, 10);
 	ret = malloc(sizeof(char) * (len + 1));
 	if (!ret)
 		return (0);

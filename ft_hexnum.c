@@ -21,7 +21,7 @@ int	ft_hexnum(unsigned int n)
 	i = 0;
 	if (n >= 16)
 		i += ft_hexnum(n / 16);
-	ft_putchar_fd(hex[n % 16], 1);
+	ft_p_putchar_fd(hex[n % 16], 1);
 	i++;
 	return (i);
 }

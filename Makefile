@@ -7,8 +7,8 @@ NAME = libftprintf.a
 
 
 # Source files
-SRCS = ft_decm.c ft_hexnum.c ft_hexnum_upper.c ft_itoa.c ft_printf.c ft_ptr.c ft_putchar_fd.c \
-		ft_putstr_fd.c ft_strlen.c ft_udecm.c ft_numlen.c
+SRCS = ft_decm.c ft_hexnum.c ft_hexnum_upper.c ft_p_itoa.c ft_printf.c ft_ptr.c ft_p_putchar_fd.c \
+		ft_p_putstr_fd.c ft_p_strlen.c ft_udecm.c ft_p_numlen.c
 
 # Object files (replace .c with .o)
 OBJS = $(SRCS:.c=.o)

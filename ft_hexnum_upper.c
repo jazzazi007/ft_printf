@@ -23,7 +23,7 @@ int	ft_hexnum_upper(int num)
 	i = 0;
 	if (n >= 16)
 		i += ft_hexnum_upper(n / 16);
-	ft_putchar_fd(hex[n % 16], 1);
+	ft_p_putchar_fd(hex[n % 16], 1);
 	i++;
 	return (i);
 }

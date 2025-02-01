@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_numlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moaljazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 20:35:56 by moaljazz          #+#    #+#             */
-/*   Updated: 2024/09/30 20:36:00 by moaljazz         ###   ########.fr       */
+/*   Created: 2024/09/30 20:50:42 by moaljazz          #+#    #+#             */
+/*   Updated: 2024/09/30 20:50:45 by moaljazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_p_numlen(int n, int base)
 {
-	int	i;
+	int	count;
 
-	i = 0;
-	if (!s)
-	{
-		write(fd, "(null)", 6);
-		return (6);
-	}
-	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-	return (ft_strlen(s));
+	count = 0;
+	if (n <= 0)
+		++count;
+	while (n && ++count)
+		n /= base;
+	return (count);
 }

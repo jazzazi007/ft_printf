@@ -22,7 +22,7 @@ static int	ft_hexptr(unsigned long n)
 	i = 0;
 	if (n >= 16)
 		i += ft_hexptr(n / 16);
-	ft_putchar_fd(hex[n % 16], 1);
+	ft_p_putchar_fd(hex[n % 16], 1);
 	i++;
 	return (i);
 }
@@ -33,10 +33,10 @@ int	ft_ptr(unsigned long ptr)
 
 	if (!ptr)
 	{
-		ft_putstr_fd("(nil)", 1);
+		ft_p_putstr_fd("(nil)", 1);
 		return (5);
 	}
-	ft_putstr_fd("0x", 1);
+	ft_p_putstr_fd("0x", 1);
 	i = ft_hexptr(ptr);
 	return (i + 2);
 }

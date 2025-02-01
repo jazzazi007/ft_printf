@@ -16,8 +16,8 @@ int	ft_decm(int numint)
 {
 	char	*num;
 
-	num = ft_itoa(numint);
-	ft_putstr_fd(num, 1);
+	num = ft_p_itoa(numint);
+	ft_p_putstr_fd(num, 1);
 	free(num);
-	return (ft_numlen(numint, 10));
+	return (ft_p_numlen(numint, 10));
 }

@@ -19,7 +19,7 @@ int	ft_udecm(unsigned int unum)
 	i = 0;
 	if (unum > 9)
 		i += ft_udecm(unum / 10);
-	ft_putchar_fd(unum % 10 + 48, 1);
+	ft_p_putchar_fd(unum % 10 + 48, 1);
 	i++;
 	return (i);
 }

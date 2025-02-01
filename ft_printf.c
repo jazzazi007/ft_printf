@@ -19,18 +19,18 @@ static int	states(const char *str, int i, va_list ptr)
 		return (ft_decm(va_arg(ptr, int)));
 	else if (str[i] == 'c')
 	{
-		ft_putchar_fd((char)va_arg(ptr, int), 1);
+		ft_p_putchar_fd((char)va_arg(ptr, int), 1);
 		return (1);
 	}
 	else if (str[i] == 's')
-		return (ft_putstr_fd(va_arg(ptr, char *), 1));
+		return (ft_p_putstr_fd(va_arg(ptr, char *), 1));
 	else if (str[i] == 'x')
 		return (ft_hexnum(va_arg(ptr, unsigned long)));
 	else if (str[i] == 'X')
 		return (ft_hexnum_upper(va_arg(ptr, unsigned long)));
 	else if (str[i] == '%')
 	{
-		ft_putchar_fd('%', 1);
+		ft_p_putchar_fd('%', 1);
 		return (1);
 	}
 	else if (str[i] == 'u')
@@ -66,7 +66,7 @@ int	ft_printf(const char *str, ...)
 			counter += states(str, i += isprintabe(str, i), ptr);
 		else
 		{
-			ft_putchar_fd(str[i], 1);
+			ft_p_putchar_fd(str[i], 1);
 			counter++;
 		}
 		i++;
